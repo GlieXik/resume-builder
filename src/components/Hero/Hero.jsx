@@ -16,7 +16,7 @@ const Sh2 = styled("h2")`
 const Img = styled("img")`
   width: 100%;
 
-  -webkit-mask-image: -webkit-gradient(
+  mask-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
