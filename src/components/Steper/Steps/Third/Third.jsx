@@ -21,6 +21,7 @@ const Third = () => {
     const form = e.currentTarget;
     const label = form.elements.skill.value;
     dispatch(addSkill(label));
+    form.reset();
   };
   return (
     <>
