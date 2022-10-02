@@ -7,6 +7,7 @@ import { styled } from "@mui/material/styles";
 import Chip from "@mui/material/Chip";
 import Paper from "@mui/material/Paper";
 import { Button, TextField } from "@mui/material";
+import { Box } from "@mui/system";
 
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),
@@ -45,12 +46,21 @@ const Third = () => {
           );
         })}
       </Paper>
-      <form onSubmit={handleSubmit}>
+
+      <Box
+        onSubmit={handleSubmit}
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1 },
+        }}
+        noValidate
+        autoComplete="off"
+      >
         <TextField id="skill" name="skill" label="Skill" variant="outlined" />
-        <Button variant="outlined" type="submit">
+        <Button variant="outlined" type="submit" sx={{ margin: "10px" }}>
           Add
         </Button>
-      </form>
+      </Box>
     </>
   );
 };

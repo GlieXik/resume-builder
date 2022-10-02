@@ -2,13 +2,15 @@ import { useState } from "react";
 import resume1 from "../../images/resumes/resume1.jpg";
 import resume2 from "../../images/resumes/resume2.jpg";
 import { Box } from "../../utils/Box";
-import MyDocument from "./Resumes/Resume1";
+import Down from "./Resumes/Resume1";
 import React from "react";
+
 const Examples = () => {
   const [state, setState] = useState(false);
   const handleClick = () => {
     setState(true);
   };
+
   return (
     <>
       {!state ? (
@@ -31,7 +33,7 @@ const Examples = () => {
           </Box>
         </>
       ) : (
-        <MyDocument></MyDocument>
+        <Down></Down>
       )}
     </>
   );

@@ -4,7 +4,7 @@ import React from "react";
 const Steps = ({ getStepContent, step, steps, back, next }) => {
   return (
     <>
-      <Box sx={{ mt: 2, mb: 1 }}>{getStepContent()}</Box>
+      <Box sx={{ m: 2 }}>{getStepContent()}</Box>
 
       <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
         <Button

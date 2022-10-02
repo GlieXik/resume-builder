@@ -1,4 +1,4 @@
-import { TextField } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import * as React from "react";
 
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -23,7 +23,12 @@ const Second = ({ formik }) => {
           <Typography>Summary</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <form onSubmit={formik.handleSubmit} autoComplete="off">
+          <Box
+            onSubmit={formik.handleSubmit}
+            component="form"
+            noValidate
+            autoComplete="off"
+          >
             <TextField
               fullWidth
               multiline
@@ -34,7 +39,7 @@ const Second = ({ formik }) => {
               variant="outlined"
               onChange={formik.handleChange}
             />
-          </form>
+          </Box>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -46,7 +51,15 @@ const Second = ({ formik }) => {
           <Typography>Project</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <form onSubmit={formik.handleSubmit} autoComplete="off">
+          <Box
+            onSubmit={formik.handleSubmit}
+            component="form"
+            sx={{
+              "& .MuiTextField-root": { m: 1 },
+            }}
+            noValidate
+            autoComplete="off"
+          >
             <TextField
               id="nameProject"
               name="nameProject"
@@ -71,7 +84,7 @@ const Second = ({ formik }) => {
               variant="outlined"
               onChange={formik.handleChange}
             />
-          </form>
+          </Box>
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -83,9 +96,17 @@ const Second = ({ formik }) => {
           <Typography>Education</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <form onSubmit={formik.handleSubmit} autoComplete="off">
+          <Box
+            onSubmit={formik.handleSubmit}
+            component="form"
+            sx={{
+              "& .MuiTextField-root": { m: 1, width: "25ch" },
+            }}
+            noValidate
+            autoComplete="off"
+          >
             <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <DesktopDatePicker
+              {/* <DesktopDatePicker
                 label="Date desktop"
                 inputFormat="DD/MM/YYYY"
                 value={formik.values.startDate}
@@ -103,7 +124,7 @@ const Second = ({ formik }) => {
                   formik.setFieldValue("endDate", value);
                 }}
                 renderInput={(params) => <TextField {...params} />}
-              />
+              /> */}
               <TextField
                 id="nameEducation"
                 name="nameEducation"
@@ -126,7 +147,7 @@ const Second = ({ formik }) => {
                 onChange={formik.handleChange}
               />
             </LocalizationProvider>
-          </form>
+          </Box>
         </AccordionDetails>
       </Accordion>
     </div>

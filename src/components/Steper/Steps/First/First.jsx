@@ -1,9 +1,19 @@
 import { TextField } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
+
 const First = ({ formik }) => {
   return (
     <>
-      <form onSubmit={formik.handleSubmit} autoComplete="off">
+      <Box
+        onSubmit={formik.handleSubmit}
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+        }}
+        noValidate
+        autoComplete="off"
+      >
         <TextField
           id="name"
           name="name"
@@ -49,7 +59,7 @@ const First = ({ formik }) => {
           variant="outlined"
           onChange={formik.handleChange}
         />
-      </form>
+      </Box>
     </>
   );
 };
