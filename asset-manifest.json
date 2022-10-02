@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/resume-builder/static/css/main.2be169d0.css",
-    "main.js": "/resume-builder/static/js/main.c4402826.js",
+    "main.js": "/resume-builder/static/js/main.a5c48dc9.js",
     "static/media/2x-header-img.jpg": "/resume-builder/static/media/2x-header-img.d9b456653901d996cde1.jpg",
     "static/media/resume2.jpg": "/resume-builder/static/media/resume2.546fa20849b7d6de9da8.jpg",
     "static/media/resume1.jpg": "/resume-builder/static/media/resume1.c1afc207b96471e8877c.jpg",
     "index.html": "/resume-builder/index.html",
     "main.2be169d0.css.map": "/resume-builder/static/css/main.2be169d0.css.map",
-    "main.c4402826.js.map": "/resume-builder/static/js/main.c4402826.js.map"
+    "main.a5c48dc9.js.map": "/resume-builder/static/js/main.a5c48dc9.js.map"
   },
   "entrypoints": [
     "static/css/main.2be169d0.css",
-    "static/js/main.c4402826.js"
+    "static/js/main.a5c48dc9.js"
   ]
 }
