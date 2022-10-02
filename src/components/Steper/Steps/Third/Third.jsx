@@ -11,7 +11,7 @@ import { Button, TextField } from "@mui/material";
 const ListItem = styled("li")(({ theme }) => ({
   margin: theme.spacing(0.5),
 }));
-const Third = ({ formik }) => {
+const Third = () => {
   const chipData = useSelector(getSkills);
   const dispatch = useDispatch();
   console.log(chipData);
