@@ -5,13 +5,13 @@ import heroImg from "../../images/header/2x-header-img.jpg";
 import React from "react";
 const Sh1 = styled("h1")`
   font-weight: 400;
-  font-size: ${p => p.theme.fontSizes.xl};
-  color: ${p => p.theme.colors.black};
+  font-size: ${(p) => p.theme.fontSizes.xl};
+  color: ${(p) => p.theme.colors.black};
 `;
 const Sh2 = styled("h2")`
   font-weight: 400;
-  font-size: ${p => p.theme.fontSizes.l};
-  color: ${p => p.theme.colors.text};
+  font-size: ${(p) => p.theme.fontSizes.l};
+  color: ${(p) => p.theme.colors.text};
 `;
 const Img = styled("img")`
   width: 100%;
@@ -30,9 +30,9 @@ export const Hero = () => {
     <>
       <Img src={heroImg} alt="ruka" />
       <Box as="header" display="block" textAlign="center" p={3}>
-        <Sh1> Генератор резюме</Sh1>
-        <Sh2>Збільшіть шанси отримати роботу вашої мрії</Sh2>
-        <PrimaryButton title="Створити своє резюме"></PrimaryButton>
+        <Sh1> Resume generator</Sh1>
+        <Sh2>Increase your chances of getting your dream job</Sh2>
+        <PrimaryButton title="Create your resume"></PrimaryButton>
       </Box>
     </>
   );
