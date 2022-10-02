@@ -7,7 +7,7 @@ import {
   Link,
   PDFDownloadLink,
 } from "@react-pdf/renderer";
-import { PDFViewer } from "@react-pdf/renderer";
+
 import { useSelector } from "react-redux";
 import { getSkills, getData } from "../../../redux/selectors";
 
