@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useEffect } from "react";
 import Examples from "../../../Resume/Examples";
+import React from "react";
 // import MyDocument from "../../../Resume/Resumes/Resume1";
 
 const FinishStep = ({ reset, set }) => {

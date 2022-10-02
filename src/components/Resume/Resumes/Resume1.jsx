@@ -4,11 +4,12 @@ import {
   View,
   Document,
   StyleSheet,
-  Link,
+  Link
 } from "@react-pdf/renderer";
 import { PDFViewer } from "@react-pdf/renderer";
 import { useSelector } from "react-redux";
 import { getSkills, getData } from "../../../redux/selectors";
+import React from "react";
 // Create styles
 const styles = StyleSheet.create({
   page: {
@@ -17,28 +18,28 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     borderBottom: "1 solid black",
     margin: 25,
-    paddingBottom: 14,
+    paddingBottom: 14
   },
 
   name: {
     fontSize: "30",
-    marginBottom: 20,
+    marginBottom: 20
   },
   details: {
     fontSize: 12,
-    alignContent: "end",
+    alignContent: "end"
   },
   page1: { flexDirection: "row", marginLeft: 25, marginRight: 25 },
   section1: { width: "28%" },
   section2: { width: "72%" },
   title: {
-    fontSize: "25",
+    fontSize: "25"
   },
   text: { fontSize: "14", marginBottom: 15, marginTop: 15 },
   education: { flexDirection: "row", width: "100%" },
   poject: { fontSize: "18", marginTop: 10 },
   container: { width: "200", marginTop: 10 },
-  skill: {},
+  skill: {}
 });
 
 // Create Document Component
@@ -68,7 +69,7 @@ const MyDocument = () => {
             <View style={styles.section1}>
               <Text style={styles.title}>Skills</Text>
 
-              {skills.map((skill) => (
+              {skills.map(skill => (
                 <Text key={skill.key} style={styles.skill}>
                   &bull; {skill.label}
                 </Text>

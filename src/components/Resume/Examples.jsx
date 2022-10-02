@@ -3,7 +3,7 @@ import resume1 from "../../images/resumes/resume1.jpg";
 import resume2 from "../../images/resumes/resume2.jpg";
 import { Box } from "../../utils/Box";
 import MyDocument from "./Resumes/Resume1";
-
+import React from "react";
 const Examples = () => {
   const [state, setState] = useState(false);
   const handleClick = () => {

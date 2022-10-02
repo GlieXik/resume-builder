@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-
+import React from "react";
 const Steps = ({ getStepContent, step, steps, back, next }) => {
   return (
     <>

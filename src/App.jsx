@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import { Hero } from "./components/Hero/Hero";
 import { ProgresBar } from "./components/ProgressBar/ProgresBar";
 import { store } from "./redux/store";
-
+import React from "react";
 export const App = () => {
   return (
     <>

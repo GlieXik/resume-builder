@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-
+import React from "react";
 import "react-step-progress/dist/index.css";
 
 import { addData } from "../../redux/dataSlice";
@@ -19,7 +19,7 @@ import Third from "../Steper/Steps/Third/Third";
 const steps = [
   "Select campaign settingss",
   "Create an ad group",
-  "Create an ad",
+  "Create an ad"
 ];
 export const ProgresBar = () => {
   const dispatch = useDispatch();
@@ -30,18 +30,18 @@ export const ProgresBar = () => {
   const formik = useFormik({
     initialValues: {
       startDate: Date.now(),
-      endDate: Date.now(),
-    },
+      endDate: Date.now()
+    }
   });
 
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    setActiveStep(prevActiveStep => prevActiveStep + 1);
   };
 
   const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    setActiveStep(prevActiveStep => prevActiveStep - 1);
   };
 
   const handleReset = () => {
